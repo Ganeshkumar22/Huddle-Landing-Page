@@ -1,0 +1,445 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Merriweather", serif;
+  font-family: " OpenSans", sans-serif;
+  overflow-x: hidden;
+}
+button {
+  border: none;
+}
+button:hover {
+  opacity: 75%;
+  cursor: pointer;
+}
+.navbar__button {
+  padding: 0.5rem 1.5rem;
+  color: hsl(192, 100%, 9%);
+  background-color: white;
+  font-weight: bolder;
+  border-radius: 15px;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
+    drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+}
+.primary__button {
+  padding: 0.8rem 3.5rem;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  border-radius: 22px;
+  font-weight: bolder;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
+    drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+}
+
+.hero__heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: hsl(192, 100%, 9%);
+  line-height: 2rem;
+}
+.text__heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: hsl(192, 100%, 9%);
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.hero__container {
+  padding-top: 1.5rem;
+  background-image: url("./images/bg-hero-mobile.svg");
+  background-color: hsl(193, 100%, 96%);
+  margin-bottom: 4rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.brand__logo {
+  width: 6rem;
+}
+.hero__content {
+  width: 100%;
+  padding: 5rem 2.13rem 2.5rem;
+}
+.hero__description {
+  text-align: center;
+}
+.hero__paragraph {
+  margin: 2rem 0;
+  color: hsl(192, 100%, 9%);
+  font-weight: 400;
+  line-height: 1.4rem;
+}
+.hero__image_container {
+  margin-top: 3.5rem;
+  width: 100%;
+}
+.hero__image {
+  width: 100%;
+  height: 14rem;
+}
+.card__one__container {
+  margin: 2rem 1.2rem 0rem 1.2rem;
+  padding: 1rem 1rem 1.9rem 1rem;
+  box-shadow: 10px 12px 22px -17px rgba(0, 0, 0, 0.1),
+    -10px -10px 22px -17px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.card__two__container {
+  margin: 2rem 1.2rem 0rem 1.2rem;
+  padding: 1rem 1rem 1.9rem 1rem;
+  box-shadow: 10px 12px 22px -17px rgba(0, 0, 0, 0.1),
+    -10px -10px 22px -17px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.card__one__image {
+  margin: 3rem 1rem;
+}
+.card__two__image {
+  margin: 3rem 1rem;
+}
+.card__image {
+  width: 100%;
+  height: 12rem;
+}
+.cards__description {
+  text-align: center;
+  line-height: 1.4rem;
+}
+.cards__paragraph {
+  margin-top: 1.2rem;
+  color: hsl(208, 11%, 55%);
+  font-weight: 400;
+}
+.final__container {
+  width: 100%;
+  position: relative;
+}
+.community__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  border-radius: 20px;
+  margin: 6rem 0.8rem 0rem 0.8rem;
+  padding: 2.7rem 0.7rem;
+  background-color: white;
+  box-shadow: 10px 12px 22px -17px rgba(0, 0, 0, 0.1),
+    -10px -10px 22px -17px rgba(0, 0, 0, 0.1);
+}
+.community__heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: hsl(192, 100%, 9%);
+}
+.community__button {
+  padding: 1rem 3.5rem;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  border-radius: 25px;
+  font-weight: bolder;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
+    drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+}
+.footer__container {
+  width: 100%;
+  position: absolute;
+  z-index: -50;
+  top: 100px;
+  padding: 9rem 0.9rem 1rem 0.9rem;
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(195, 3%, 73%);
+}
+.brand__name {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.fa-regular {
+  font-size: 1.8rem;
+}
+.brand__text {
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.brand__details__alignment {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  margin-bottom: 1.6rem;
+}
+.address__text {
+  margin-top: 2rem;
+  line-height: 1.2rem;
+}
+.brand__details {
+  margin-top: 4rem;
+}
+.brand__details__text {
+  font-size: large;
+  margin: 1rem 0;
+}
+.brand__details__text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.brand__details__three {
+  margin: 4rem 0 2.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.brand__social__media {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.7rem;
+}
+.fa-brands:hover {
+  color: hsl(322, 100%, 66%);
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .hero__container {
+    background-image: url("./images/bg-hero-desktop.svg");
+  }
+  .navbar__button {
+    font-weight: bold;
+    padding: 0.7rem 3rem;
+    border-radius: 25px;
+  }
+  .navbar {
+    padding: 0 2rem;
+  }
+  .brand__logo {
+    width: 7rem;
+  }
+  .hero__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0rem 2.5rem 2rem;
+    margin: 0rem 0rem 6rem 0rem;
+  }
+  .hero__image {
+    height: 20rem;
+    width: 26rem;
+    padding-left: 1rem;
+  }
+  .hero__description {
+    text-align: left;
+  }
+  .hero__paragraph {
+    margin: 1rem 0;
+  }
+  .card__one__container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0rem 2rem 0rem 2rem;
+    padding: 0rem 0rem 0rem 3rem;
+  }
+  .card__two__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 0rem 1rem 0rem 1.5rem;
+  }
+  .card__one__image {
+    width: 100%;
+    margin: 1.5rem;
+  }
+  .card__two__image {
+    width: 100%;
+    margin: 1.5rem;
+  }
+  .card__image {
+    width: 16rem;
+    height: 14rem;
+  }
+  .cards__description {
+    text-align: left;
+  }
+  .cards__paragraph {
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+  .community__container {
+    margin: 6rem 10rem;
+    padding: 2.5rem 0.7rem 2rem 0.7rem;
+  } 
+}
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 0 3.5rem;
+    margin-top: 0.8rem;
+  }
+  .primary__button {
+    padding: 1rem 3.8rem;
+    border-radius: 2.5rem;
+    font-size: 0.8rem;
+  }
+  .brand__logo {
+    width: 8.5rem;
+  }
+  .hero__content {
+    padding: 0rem 3.5rem 3rem;
+  }
+  .hero__heading {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .text__heading {
+    font-size: 1.5rem;
+  }
+  .hero__image {
+    height: 30rem;
+    width: 45rem;
+    padding-left: 3rem;
+  }
+  .hero__paragraph {
+    margin: 1.5rem 0;
+  }
+  .card__one__container {
+    margin: 2.5rem 4rem 0rem 4rem;
+    padding: 0rem 2rem 0rem 6rem;
+  }
+  .card__two__container {
+    margin: 2.5rem 4rem 0rem 4rem;
+    padding: 0rem 2.1rem 0rem 0rem;
+  }
+  .card__one__image {
+    margin: 3rem 0rem 3rem 10rem;
+    padding-left: 3rem;
+  }
+  .card__two__image {
+    margin: 3rem 0rem 3rem 5rem;
+  }
+  .card__image {
+    width: 27rem;
+    height: 22rem;
+  }
+  .community__container {
+    margin: 8rem 23rem;
+    padding: 3rem 5rem;
+    gap: 1.5rem;
+    border-radius: 1rem;
+  }
+  .community__heading {
+    font-size: 1.5rem;
+  }
+  .community__button {
+    padding: 1.1rem 4.5rem;
+    border-radius: 2.5rem;
+    font-size: 0.8rem;
+  }
+  .footer__container {
+    padding: 12rem 5rem 2rem 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+  }
+  .brand__details {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+  }
+  .brand__details__three {
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1440px) {
+  .navbar {
+    margin-top: 0.4rem;
+    padding: 0 4.6rem;
+  }
+  .brand__logo {
+    width: 11rem;
+  }
+  .navbar__button {
+    padding: 1rem 3.8rem;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  .primary__button {
+    padding: 1.2rem 4.7rem;
+    font-size: 1.2rem;
+  }
+  .brand__logo {
+    width: 12rem;
+  }
+  .hero__heading {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  .text__heading {
+    font-size: 1.9rem;
+  }
+  .hero__content {
+    padding: 0 4.6rem 4rem;
+  }
+  .hero__paragraph {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  .hero__image {
+    height: 33rem;
+    width: 47rem;
+    padding-left: 3.5rem;
+  }
+  .cards__paragraph {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  .card__one__container {
+    margin: 2.5rem 5.5rem 0rem 5.5rem;
+  }
+  .card__two__container {
+    margin: 2.5rem 5.5rem 0rem 5.5rem;
+  }
+  .card__one__image {
+    margin: 3.5rem 0rem 3.5rem 10rem;
+  }
+  .card__two__image {
+    margin: 3.5rem 0rem 3.5rem 5rem;
+  }
+  .community__container {
+    margin: 8.5rem 23rem;
+    padding: 4rem 3.2rem 3rem 3.2rem;
+  }
+  .community__heading {
+    font-size: 1.9rem;
+  }
+  .community__button {
+    padding: 1.5rem 5rem;
+    font-size: 1.2rem;
+    border-radius: 3rem;
+  }
+  .footer__container {
+    padding: 14rem 7rem 2rem 7rem;
+    gap: 9rem;
+  }
+  .brand__text {
+    font-size: 2.5rem;
+  }
+  .fa-regular {
+    font-size: 2rem;
+  }
+  .brand__details {
+    gap: 9rem;
+  }
+}
