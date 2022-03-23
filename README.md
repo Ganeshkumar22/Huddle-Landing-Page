@@ -15,7 +15,7 @@ Users should be able to:
 
 ## Solution Link 🔗
 
-- Solution URL: [https://your-solution-url.com]
+- Solution URL: [https://huddle-landing-page-ganeshkumar22.vercel.app/]
 
 ## Built with 🏨
 
